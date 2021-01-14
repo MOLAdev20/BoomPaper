@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BOM paper</title>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
+	<style type="text/css">
+		.kotak{
+			border-radius: 50%;
+			text-align: center;
+			line-height: 90px;
+			font-size: 80px;
+			color: white;
+		}
+
+		#score{
+			margin-top: -30px
+		}
+		@media screen and (max-width: 1200px){
+			.kotak {
+				font-size: 50px;
+				line-height: 80px;
+			}
+		}
+
+		@media screen and (max-width: 400px){
+			.kotak {
+				font-size: 30px;
+				line-height: 42px;
+			}
+		}
+
+
+	</style>
+</head>
+<body class="bg-dark">
+	
+
+	<div class="container p-3">
+		<div class="m-3">
+			<h1 class="text-center text-light">Bom Paper</h1>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-6 p-5 card" id="canvas">
+				<div class="row justify-content-center">
+					<div class="col-3 kotak bg-dark m-2" id="1">A</div>
+					<div class="col-3 kotak bg-dark m-2" id="2">B</div>
+					<div class="col-3 kotak bg-dark m-2" id="3">C</div>
+					<div class="col-3 kotak bg-dark m-2" id="4">D</div>
+					<div class="col-3 kotak bg-dark m-2" id="5">E</div>
+					<div class="col-3 kotak bg-dark m-2" id="6">F</div>
+					<div class="col-3 kotak bg-dark m-2" id="7">G</div>
+					<div class="col-3 kotak bg-dark m-2" id="8">H</div>
+					<div class="col-3 kotak bg-dark m-2" id="9">I</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row text-center justify-content-center">
+			<div class="col-8 shadow-lg card p-3" id="score">
+				<p class="text-center"><i>Klik semua hurufnya. Dan sisakan satu jebakan</i></p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="assets/jquery.js"></script>
+	<script type="text/javascript" src="assets/engine.js"></script>
+</html>
